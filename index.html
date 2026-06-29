@@ -7,10 +7,15 @@
     <title>Web WorkShop : 684259054</title>
 
     <style>
+        html{
+        scroll-behavior: smooth;
+    }
         body{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
             margin: 20px;
             padding: 20px ;
+            background-color: rgba(248, 173, 173, 0.295);
+            line-height: 1.5;
         }
 
         h1 {
@@ -20,23 +25,34 @@
 h2 {
     color: rgb(255, 0, 0);
 }
-p {
-    text-align: center;
-}
 .green-text{
     color: green;
 }
 
     pre{
-        background-color: antiquewhite;
-        border-left: 3px solid #ff9100;
+        background-color: rgb(255, 255, 255);
+        border-left: 3px solid #ff0000;
         padding: 10px 0 5px 0;
         font-size: 16px;
+        white-space: pre-wrap;
+        border-radius: 17px;
     }
+    a{
+        text-decoration: none;
+        
+    }
+    a:hover{
+        text-decoration: underline;
+        color: red;
+    }
+    .text-center {
+        text-align: center;
+    }
+
     </style>
 </head>
 <body>
-    <h1>HTML tutorial</h1>
+    <h1 id="top">HTML tutorial</h1>
     <p>Welcome to the HTML tutorial. Click on the topic below to start learning: </p>    
     <h2>Topics</h2>
     <ul>
@@ -50,7 +66,6 @@ p {
         <li><a href="#images">Adding Images</a></li>
         <li><a href="#tables">Creating Tables</a></li>
         <li><a href="#forms">HTML Forms</a></li>
-        <li><a href="#multimedia">Embedding Multimedia (Audio & Video)</a></li>
         <li><a href="#semantic">Semantic HTML</a></li>
         <li><a href="#workshop">Workshop</a></li>
     </ul>
@@ -71,7 +86,7 @@ p {
     - HTML is not a programming language, but a markup language
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- HTML Document Structure -->
     <h2 id="document">HTML Document Structure</h2>
@@ -95,14 +110,15 @@ p {
     &lt;img src="image.jpg" alt="A description of the image"&gt;
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Heading -->
     <h2 id="heading">Heading</h2>
-    <p style="font-size: 18px;
-    text-align: left;">workshop </p>
+    
     <p style="font-size: 20px;
     text-align: left;">HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags... </p>
+    <p style="font-size: 18px;
+    text-align: left;"><a href="W03-heading.html">workshop</a></p>
     <pre>
     - &lt;h1&gt;: Heading 1
     - &lt;h2&gt;: Heading 2
@@ -114,22 +130,23 @@ p {
 
     <!-- Paragraph -->
     <h2 id="paragraph">Paragraph</h2>
-    <p style="font-size: 18px;
-    text-align: left;">workshop </p>
+    
     <p style="font-size: 20px;
     text-align: left;">HTML paragraphs are defined with the &lt;p&gt; tag... </p>
+    <p style="font-size: 18px;
+    text-align: left;"><a href="W03-heading.html">workshop</a></p>
     <pre>
     - &lt;p&gt;: Paragraph
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Text Formatting -->
     <h2 id="text">Text Formatting</h2>
-    <p style="font-size: 18px;
-    text-align: left;">workshop </p>
     <p style="font-size: 20px;
     text-align: left;">HTML provides various elements to format text... </p>
+    <p style="font-size: 18px;
+    text-align: left;"><a href="W03-heading.html">workshop</a></p>
     <pre>
     - &lt;h1&gt; to &lt;h6&gt;: Headings
     - &lt;p&gt;: Paragraph
@@ -153,14 +170,15 @@ p {
     - &lt;code&gt;: Code snippet
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
     
     <!-- Creating Links -->
     <h2 id="links">Creating Links</h2>
-    <p style="font-size: 18px;
-    text-align: left;">workshop </p>
+    
     <p style="font-size: 20px;
-    text-align: left;">HTML links are defined with the <a> tag... </p>
+    text-align: left;">HTML links are defined with the &lt;a&gt; tag... </p>
+    <p style="font-size: 18px;
+    text-align: left;"><a href="W03-heading.html">workshop</a></p>
     <pre>
     - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
     - The href attribute specifies the URL of the page the link goes to
@@ -183,14 +201,15 @@ p {
     - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
     
     <!-- Lists (Ordered and Unordered) -->
     <h2 id="lists">Lists (Ordered and Unordered)</h2>
-    <p style="font-size: 18px;
-    text-align: left;">workshop </p>
+    
     <p style="font-size: 20px;
     text-align: left;">HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags... </p>
+    <p style="font-size: 18px;
+    text-align: left;"><a href="W03-heading.html">workshop</a></p>
     <pre>
     - &lt;ul&gt;: Unordered list
     - &lt;ol&gt;: Ordered list
@@ -238,14 +257,15 @@ p {
     - Example: &lt;ol style="list-style-type: lower-roman;"&gt;
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
     
     <!-- Adding Images -->
     <h2 id="images">Adding Images</h2>
-    <p style="font-size: 18px;
-    text-align: left;">workshop </p>
+    
     <p style="font-size: 20px;
     text-align: left;">HTML images are defined with the &lt;img&gt; tag... </p>
+    <p style="font-size: 18px;
+    text-align: left;"><a href="W03-heading.html">workshop</a></p>
     <pre>
     - &lt;img src="url" alt="description"&gt;
     - The src attribute specifies the URL of the image
@@ -295,16 +315,15 @@ p {
     }
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
     
     <!-- Creating Tables -->
     <h2 id="tables">Creating Tables</h2>
-    <p style="font-size: 18px;
-    text-align: left;">workshop 1</p>
-    <p style="font-size: 18px;
-    text-align: left;">workshop 2</p>
+    
     <p style="font-size: 20px;
     text-align: left;">HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags... </p>
+    <p style="font-size: 18px;
+    text-align: left;"><a href="W03-heading.html">workshop</a></p>
     <pre>
     - &lt;table&gt;: Table
     - &lt;tr&gt;: Table row
@@ -312,7 +331,7 @@ p {
     - &lt;td&gt;: Table data/cell
     </pre>
     <hr>
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
     
     <!-- HTML Forms -->
     <h2 id="forms">HTML Forms</h2>
@@ -324,7 +343,7 @@ p {
     - &lt;form>: ใชเ้ป็นตัวครอบข้อมูลในฟอรม์
     - action และ method (GET/POST): การกำหนดปลายทางและวิธีส่งข้อมูล
     2.ชนิดของอินพุต (Input Types)
-    - &lt;input>: ชนดิ ตา่ ง ๆ เชน่ text, password, email, number,radio, checkbox, date, file
+    - &lt;input>: ชนิดต่างๆเช่น text, password, email, number,radio, checkbox, date, file
    - &lt;textarea>: ช่องข้อความขนาดใหญ่
     - &lt;select> และ &lt;option>: เมนูแบบเลื่อนลง
     - &lt;datalist>: รายการตัวเลือกที่กำหนดไว ้ล่วงหน้า
@@ -337,26 +356,20 @@ p {
     - &lt;input type="image">: ปุ่มรูปภาพ
     - &lt;input type="file">: ปุ่มอัพโหลดไฟล์
     4.การจัดการป้ายกำกับ (Labels)
-    - &lt;label>: เพอื่ เชอื่ มกับ &lt;input> (ชว่ ยเพมิ่ การเขา้ถงึ)
-    - for: ระบุ id ของอินพุตที่เกี่ยวข ้อง
-    5. การตรวจสอบข ้อมูล (Validation)
-    - คณุ สมบัติเชน่ required, min, max, pattern
+    - &lt;label>: เพื่อเชื่อมกับ &lt;input> (ช่วยเพิ่มการเข้าถึง)
+    - for: ระบุ id ของอินพุตที่เกี่ยวข้อง
+    5. การตรวจสอบข้อมูล (Validation)
+    - คุณสมบัติเชน่ required, min, max, pattern
     - การใช ้JavaScript เพื่อท าการตรวจสอบ
     6. ฟอร์มแบบสมัยใหม่ (HTML5)
-    - placeholder: ตัวอย่างขอ้ความในชอ่ งอนิ พุต
-    - autofocus: ให ้ฟอร์มเริ่มต ้นโฟกัส
-    7. การสง่ ฟอรม์ (Form Submission)
-    - การสง่ ขอ้มลู ไปยังเซริฟ์ เวอร์
-    - การใช ้JavaScript (เชน่ onsubmit)
+    - placeholder: ตัวอย่างข้อความในช่องอินพุต
+    - autofocus: ให้ฟอร์มเริ่มต้นโฟกัส
+    7. การส่งฟอรม์ (Form Submission)
+    - การส่งข้อมูลไปยังเซริฟ์เวอร์
+    - การใช ้JavaScript (เช่น onsubmit)
     </pre>
     <hr>
-    <a href="">back to Top</a>
-    
-    <!-- Embedding Multimedia (Audio & Video) -->
-    <h2 id="multimedia">Embedding Multimedia (Audio & Video)</h2>
-    <pre>
-
-    </pre>
+    <a href="#top">back to Top</a>
     
     <!-- Semantic HTML -->
     <h2 id="semantic">Semantic HTML</h2>
@@ -375,11 +388,16 @@ p {
     
     <!-- Workshop -->
     <h2 id="workshop">Workshop</h2>
-    <pre>
-    workshop 01 : rabbit
-    workshop 02 : Login
-    </pre>
+    <a href="">workshop 01 : ...</a>
+    <br>
+    <a href="">workshop 02 : ...</a>
+<br><br>
+    <a href="#top">back to Top</a>
     <hr>
-    <a href="">back to Top</a>
+    <div class="text-center">
+        <a href="https://www.w3schools.com/html">Learnmore about HTml</a>
+        <p >&COPY; 2026 HTML Tutorail by Narathip Thaphon</p>
+    </div>
+    
 </body>
 </html>
