@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Playpen Sans Thai", sans-serif;
+    background-color: #e7dada;
+    color: black;
+    line-height: 1.6;
+}
+/* .ใช้กับclass #ใช้กับid */
+.container {
+  /* border: 1px solid rgb(95, 12, 202);
+  padding: 20px;
+  margin: 20px; */
+}
+
+/*=========================
+ Header 
+ =========================*/
+.site-header {
+  background: linear-gradient(90deg, rgb(0, 0, 126),rgb(25, 0, 255));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    padding: 10px;
+}
+.brand-icon{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid pink;
+    font-size: 30px;
+}
+.brand-text h2 {
+    font-size: 26px;
+}
+.brand-text p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* main-nav */
+.main-nav{}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-list a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 1s;
+}
+.nav-list a:hover{
+    background-color: rgb(58, 58, 255);
+}
+
+
+/*=========================
+ Main-layout
+ =========================*/
+.main-layout {
+  display: flex;
+  grid-template-columns: 1fr 390px;
+  /* grid-template-columns: 70% 30%; */
+  padding: 20px 22px 0;
+}
+
+/* Left Content */
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* hero */
+.hero{
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(100deg, white,rgb(48, 196, 255));
+  border-radius: 10px;
+  padding: 24px 36px;
+  box-shadow: 0 4px 12px rgba(216, 214, 214, 0.39);
+}
+.hero-text h1 {
+    font-size: 36px;
+    color: blue;
+}
+.hero-text p {
+    font-size: 21px;
+    color: rgb(13, 0, 133);
+    font-weight: 600;
+}
+.hero-photo img {
+    width: 400px;
+    height: 200px;
+    border-radius: 3px solid rgb(255, 0, 0);
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* link example */
+.card{
+    border: 1px solid rgb(226, 137, 137);
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Left Content */
+.right-content {
+  border: 1px solid rgb(223, 87, 87);
+  padding: 20px;
+  margin: 20px;
+}
+/*=========================
+ Tip-box
+ =========================*/
+.tip-box {
+  border: 1px solid rgb(2, 103, 255);
+  padding: 20px;
+  margin: 20px;
+}
