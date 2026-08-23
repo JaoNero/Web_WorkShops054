@@ -101,15 +101,6 @@ body {
   padding: 24px 36px;
   box-shadow: 0 4px 12px rgba(216, 214, 214, 0.39);
 }
-.hero-text h1 {
-  font-size: 36px;
-  color: blue;
-}
-.hero-text p {
-  font-size: 21px;
-  color: rgb(10, 2, 80);
-  font-weight: 600;
-}
 .hero-photo img {
   width: 400px;
   height: 200px;
@@ -204,17 +195,84 @@ body {
 figcaption{font-size: 10px;text-align: center;}
 figure{margin: 5px;}
 
-/* Left Content */
-.right-content {
+/* right Content */
+/* .right-content {
   border: 1px solid rgb(223, 87, 87);
   padding: 20px;
   margin: 20px;
+} */
+.right-box {
+  background-color: rgb(252, 252, 252);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  line-height: 2;
 }
 /*=========================
  Tip-box
  =========================*/
 .tip-box {
-  border: 1px solid rgb(2, 103, 255);
+  background-color: rgb(248, 186, 186);
   padding: 20px;
   margin: 20px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  align-items: center;
+  gap: 20px;
 }
+.tip-icon {
+    margin: 20px;
+    background-color: rgb(29, 15, 238);
+    color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 70px;    
+}
+.tip-box p span {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+.tip-box h3 {
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.tip-icon2 {
+    font-size: 60px;
+}
+/*=========================
+ font
+ =========================*/
+ .hero-text h1 {
+  font-size: 36px;
+  color: blue;
+}
+.hero-text p {
+  font-size: 21px;
+  color: rgb(10, 2, 80);
+  font-weight: 600;
+}
+ .font-right {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: blue;
+    border-radius: 50%;
+ }
+ .font-head-right {
+    font-weight: bold;
+    color: blue;
+    font-size: 20px;
+ }
+ .font-head-right span {
+    font-weight: bold;
+    font-size: 35px;
+ }
