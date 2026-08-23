@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ebf8ff;
+
+  line-height: 1.85;
+}
+
+/* footer,
+.hero,
+.card,
+.tip-box {
+  border: 1px solid black;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;} */
+/*เอาไว้ดูและแยกโครงสร้าง */
+
+/* ==============================
+      Header / Navigation
+============================== */
+header {
+  background: linear-gradient(to right, #001f63, #0038ee);/*สีซ้ายไปขวา*/
+  padding: 20px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 4px 8px black;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.brand-icon {
+  font-size: 45px;
+}
+.brand-text p {
+  font-size: 13px;
+}
+
+
+/* ==============================
+      Hero Section
+============================== */
+.hero {
+  padding: 45px 70px 25px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.hero-icon {
+  padding: 15px;
+  color: white;
+  font-size: 45px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #001f63, #0038ee);/*สีซ้ายบนลงขวาล่าง*/
+  box-shadow: 0 4px 6px black;
+  overflow: hidden;
+}
+.hero-text {
+  font-size: 45px;
+  color: #00236e;
+}
+.hero-text p {
+  font-size: 20px;
+  color: rgb(82, 82, 82);
+}
+/*.herp-text h1 {} ควรใช้อันนี้มากกว่าเพราะ ทั้ง2ไม่มีอะไรเหมือนกัน*/
+
+
+
+/* ==============================
+      Main Section
+============================== */
+.container {
+  max-width: 1800px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+.card {
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #dbeafe;
+  box-shadow: 0 4px 6px black;
+  overflow: hidden;
+}
+
+/*header card*/
+.card-header {
+  padding: 18px 22px;
+  border-bottom: 1px solid #dbeafe;
+  background: #f8fbff;
+  font-size: 20px;
+  font-weight: bold;
+  color: #005bea;
+}
+.card-header b{
+  padding: 5px;
+  background: #1645df;
+  border-radius: 50px;
+}
+.card-header b2{
+  padding: 8px 5px 8px;
+  background: #610099;
+  border-radius: 50px;
+}
+.card-header h2{
+  font-size: 20px;
+color: #610099;
+}
+
+/*body card 2*/
+.card-body {
+  padding: 22px;
+}
+.format-row {
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.label {
+  padding: 4px 6px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.B {background-color: #610099;}
+.S {background-color: #9e00fa;}
+.I {background-color: #b73bff;}
+.EM {background-color: #c474f3;}
+.U {background-color: #fa6aff;}
+.M {background-color: #f839ff;}
+.SM {background-color: #f037c2;}
+.D {background-color: #f71be4;}
+.SP {background-color: #df22a6;}
+.SB {background-color: #ff0080;}
+.format-text {
+  font-size: 15px;
+  color: #333;
+}
+
+.code-box {
+  background: #111827;
+  color: #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  overflow-x: auto;
+  margin: 20px 20px;
+}
+.code-box pre {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ff295e;
+}
+.text{color: white;}
+
+.line-no{color: #b1b0b0;
+display: inline-block;
+width: 30px;}
+
+.color{color: rgb(24, 117, 224);}
+
+
+/* body card 3 */
+.activity-list {
+  list-style: none;
+}
+.activity-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.activity-list li:last-child {
+  margin-bottom: 0;
+}
+.check {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+.a{background-color: #b80000;}
+.b{background-color: #e90059;}
+.c{background-color: #ff006a;}
+.d{background-color: #ff388b;}
+.e{background-color: #ff77af;}
+.code-inline {
+  background: #f1f5f9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #005bea;
+}
+
+.tip-box {
+  background: #fff7df;
+  border: 1px solid #facc15;
+  border-radius: 18px;
+  padding: 24px 30px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 35px;
+}
+.tip-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+.tip-box h2 {
+  font-size: 20px;
+  color: #854d0e;
+  margin-bottom: 6px;
+}
+.tip-box p {
+  font-size: 15px;
+  color: #a16207;
+}
+
+/* ==============================
+      Footer Section
+============================== */
+
+.site-footer {
+    background: linear-gradient(135deg, #001f63, #0038ee);
+    color: #ffffff;
+    padding: 50px 40px 20px;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.brand-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 12px;
+}
+
+.brand-info .course-title {
+    font-weight: bold;
+    color: #94a3b8;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    color: #94a3b8;
+}
+/*border-box = paddingรวมกับborder
+ระยะห่างภายใน paddimg ภายนอก margin*/
