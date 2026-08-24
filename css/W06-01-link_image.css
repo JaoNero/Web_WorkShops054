@@ -225,12 +225,20 @@ figure {
   overflow: auto;
   box-shadow: 3px 5px 10px;
 }
-/* .right-grid{
+.right-box2 {
+  background-color: rgb(252, 252, 252);
+  padding: 10px 20px;
+  margin: 0 20px 20px;
+  border-radius: 5px;
+  line-height: 2;
+  border: 1px solid rgb(219, 125, 125);
+  overflow: auto;
+  box-shadow: 3px 5px 10px;
+}
+.right-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
   padding: 20px 22px 0;
-} */
+}
 /*=========================
  Tip-box
  =========================*/
@@ -360,5 +368,59 @@ figure {
   margin: 0 20px 20px;
   border-radius: 5px;
   box-shadow: 3px 5px 10px;
+  overflow: auto;
  }
  .icon{font-size: 25px;}
+
+
+ /*=========================
+ Responsive
+ =========================*/
+@media (max-width: 1200px){
+.main-layout {
+  grid-template-columns: 1fr;}
+.right-grid{
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0 0;
+}
+.right-box{
+  margin: 20px 15px 0 0;
+}.right-box2{
+  margin: 20px 0 5px 0;
+}.right-box3{
+  margin: 20px 15px 0 0;
+}.right-box4{
+  margin: 20px 0 0 0;
+}
+}
+@media (max-width: 768px){
+.right-grid{
+  grid-template-columns: 1fr;
+  padding: 5px 0 0;
+}
+.right-box{
+  margin: 10px 0 0 0;
+}.right-box2{
+  margin: 10px 0 0 0;
+}.right-box3{
+  margin: 10px 0 0 0;
+}.right-box4{
+  margin: 10px 0 0 0;
+}
+.site-header {
+  flex-direction: column;
+}
+.tip-icon2 {
+  display: none;
+}
+.nav-list {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.site-header {
+  max-width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+}
