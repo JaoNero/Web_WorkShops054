@@ -20,7 +20,7 @@ body {
  Header 
  =========================*/
 .site-header {
-  background: linear-gradient(90deg, rgb(0, 0, 126), rgb(25, 0, 255));
+  background: linear-gradient(90deg, rgb(124, 2, 2), rgb(207, 22, 22));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,18 +68,19 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   transition: all 1s;
+  margin: 10px;
 }
 .nav-list a:hover {
-  background-color: rgb(58, 58, 255);
+  background-color: rgb(238, 59, 59);
 }
 
 /*=========================
  Main-layout
  =========================*/
 .main-layout {
-  display: flex;
-  grid-template-columns: 1fr 390px;
-  /* grid-template-columns: 70% 30%; */
+  display: grid;
+  /* grid-template-columns: 1fr 390px; */
+  grid-template-columns: 70% 30%;
   padding: 20px 22px 0;
 }
 
@@ -95,11 +96,11 @@ body {
   grid-template-columns: 1.5fr 0.8fr;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 5px 10px;
 
-  background: linear-gradient(100deg, white, rgb(48, 196, 255));
+  background: linear-gradient(100deg, white, rgb(204, 14, 14));
   border-radius: 10px;
   padding: 24px 36px;
-  box-shadow: 0 4px 12px rgba(216, 214, 214, 0.39);
 }
 .hero-photo img {
   width: 400px;
@@ -116,11 +117,12 @@ body {
   padding: 24px 36px;
   margin: 15px 0px;
   box-shadow: 0 4px 12px rgba(216, 214, 214, 0.39);
+  box-shadow: 3px 5px 10px;
 }
 .card-header-title {
   display: flex;
   gap: 10px;
-  color: blue;
+  color: rgb(221, 32, 32);
   align-items: center;
 }
 .card-body-grid {
@@ -128,16 +130,16 @@ body {
   grid-template-columns: 30% 70%;
   gap: 10px;
 }
-.result-panel{
-  border: 1px solid rgb(173, 221, 240);
+.result-panel {
+  border: 1px solid rgb(248, 186, 186);
   border-radius: 10px;
   overflow: hidden;
 }
-.result-panel-title{
-  background-color: rgb(173, 221, 240);
+.result-panel-title {
+  background-color: rgb(248, 186, 186);
   padding: 5px 10px;
 }
-.result-panel-body{
+.result-panel-body {
   padding: 5px 10px;
 }
 .result-panel-body a {
@@ -148,17 +150,17 @@ body {
   color: red;
   text-decoration: none;
 }
-.mail-icon{
+.mail-icon {
   background-color: blue;
   border-radius: 5px;
   padding: 0px 2px;
   text-decoration: none;
 }
-.mail{
+.mail {
   display: flex;
   gap: 5px;
 }
-.botton{
+.botton {
   text-decoration: none;
   border: 2px solid blue;
   border-radius: 5px;
@@ -166,34 +168,46 @@ body {
   padding: 0 5px;
   display: inline-block !important;
 }
-.code-panel{
-  border: 1px solid rgb(173, 221, 240);
+.code-panel {
+  border: 1px solid rgb(252, 135, 135);
   border-radius: 10px;
   overflow: hidden;
   background-color: black;
 }
-.code-panel-body{
+.code-panel-body {
   padding: 5px 10px;
   color: white;
   font-family: monospace;
 }
-.code-list{
+.code-list {
   color: gray;
   padding: 3px 20px;
 }
-.text{color: white;}
-.tag{color: rgb(240, 23, 59);}
-.value{color: aquamarine;}
-.attr{color: rgb(41, 231, 41);}
-
-.result-panel-body-3g{
-  display: grid;
-  grid-template-columns:repeat(3,1fr);
-  padding: 20px;
-
+.text {
+  color: white;
 }
-figcaption{font-size: 10px;text-align: center;}
-figure{margin: 5px;}
+.tag {
+  color: rgb(240, 23, 59);
+}
+.value {
+  color: aquamarine;
+}
+.attr {
+  color: rgb(41, 231, 41);
+}
+
+.result-panel-body-3g {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+}
+figcaption {
+  font-size: 10px;
+  text-align: center;
+}
+figure {
+  margin: 5px;
+}
 
 /* right Content */
 /* .right-content {
@@ -203,11 +217,20 @@ figure{margin: 5px;}
 } */
 .right-box {
   background-color: rgb(252, 252, 252);
-  padding: 20px;
-  margin: 20px;
+  padding: 10px 20px;
+  margin: 0 20px 20px;
   border-radius: 5px;
   line-height: 2;
+  border: 1px solid rgb(219, 125, 125);
+  overflow: auto;
+  box-shadow: 3px 5px 10px;
 }
+/* .right-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  padding: 20px 22px 0;
+} */
 /*=========================
  Tip-box
  =========================*/
@@ -220,59 +243,122 @@ figure{margin: 5px;}
   grid-template-columns: 0.1fr 1fr 0.1fr;
   align-items: center;
   gap: 20px;
+  box-shadow: 3px 5px 10px;
 }
 .tip-icon {
-    margin: 20px;
-    background-color: rgb(29, 15, 238);
-    color: white;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 70px;    
+  margin: 20px;
+  background-color: rgb(29, 15, 238);
+  color: white;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 70px;
 }
 .tip-box p span {
-    color: rgb(255, 0, 0);
-    font-weight: bold;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
 }
 .tip-box h3 {
-    color: rgb(0, 0, 255);
-    font-weight: bold;
-    font-size: 24px;
-    margin: 10px 0;
+  color: rgb(126, 5, 5);
+  font-weight: bold;
+  font-size: 24px;
+  margin: 10px 0;
 }
 .tip-icon2 {
-    font-size: 60px;
+  font-size: 60px;
 }
 /*=========================
  font
  =========================*/
- .hero-text h1 {
+.hero-text h1 {
   font-size: 36px;
-  color: blue;
+  color: rgb(126, 5, 5);
 }
 .hero-text p {
   font-size: 21px;
   color: rgb(10, 2, 80);
   font-weight: 600;
 }
- .font-right {
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    padding: 5px 10px;
-    background-color: blue;
-    border-radius: 50%;
+.font-right {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: blue;
+  border-radius: 50%;
+}
+.font-head-right {
+  font-weight: bold;
+  color: rgb(126, 5, 5);
+  font-size: 20px;
+}
+.font-head-right span {
+  font-weight: bold;
+  font-size: 35px;
+}
+/*=========================
+ lay-out
+ =========================*/
+.lay-out {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+.lay-out span{
+  border-radius: 50px;
+  padding: 10px 15px;
+  margin: 0 15px 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.lay-out span:nth-child(1){background-color: rgb(248, 178, 178);color: rgb(185, 1, 1);}
+.lay-out span:nth-child(2){background-color: rgb(240, 181, 154);color: rgb(233, 74, 0);}
+.lay-out span:nth-child(3){background-color: rgb(247, 233, 157);color: rgb(197, 168, 4);}
+.lay-out span:nth-child(4){background-color: rgb(213, 240, 139);color: rgb(139, 189, 3);}
+.lay-out span:nth-child(5){background-color: rgb(143, 241, 134);color: rgb(20, 170, 6);}
+.lay-out span:nth-child(6){background-color: rgb(129, 245, 216);color: rgb(7, 179, 136);}
+.lay-out span:nth-child(7){background-color: rgb(142, 241, 248);color: rgb(7, 168, 179);}
+.lay-out span:nth-child(8){background-color: rgb(140, 201, 230);color: rgb(7, 125, 179);}
+
+.right-box3{
+  background-color: rgb(252, 252, 252);
+  padding: 10px 20px 20px;
+  margin: 0 20px 20px;
+  border-radius: 5px;
+  line-height: 3;
+  border: 1px solid rgb(219, 125, 125);
+  overflow: auto;
+  box-shadow: 3px 5px 10px;
+}
+.right-box3 ol{list-style: none;}
+.right-box3 ol span{
+  font-weight: bold;
+  font-size: 15px;
+  padding: 3px 10px;
+  border-radius: 50%;
+}
+.right-box3 li:nth-child(1) span {background-color: rgb(248, 178, 178);color: rgb(185, 1, 1);}
+.right-box3 li:nth-child(2) span {background-color: rgb(240, 181, 154);color: rgb(233, 74, 0);}
+.right-box3 li:nth-child(3) span {background-color: rgb(247, 233, 157);color: rgb(197, 168, 4);}
+.right-box3 li:nth-child(4) span {background-color: rgb(213, 240, 139);color: rgb(139, 189, 3);}
+.right-box3 li:nth-child(5) span {background-color: rgb(143, 241, 134);color: rgb(20, 170, 6);}
+.right-box3 li:nth-child(6) span {background-color: rgb(129, 245, 216);color: rgb(7, 179, 136);}
+/*=========================
+ border
+ =========================*/
+ .right-box4 {
+  background-color: rgb(248, 186, 186);
+  border: 1px solid rgb(219, 125, 125);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  margin: 0 20px 20px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px;
  }
- .font-head-right {
-    font-weight: bold;
-    color: blue;
-    font-size: 20px;
- }
- .font-head-right span {
-    font-weight: bold;
-    font-size: 35px;
- }
+ .icon{font-size: 25px;}
