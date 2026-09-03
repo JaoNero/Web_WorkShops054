@@ -25,7 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.brand {
+.brand {  
   display: flex;
   align-items: center;
   gap: 15px;
