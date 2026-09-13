@@ -13,6 +13,7 @@
     --mute-text-color: rgb(155, 152, 152);
     --nav-text-color:rgb(36, 34, 34);
     --light-text-color:white;
+    --dark-text-color:rgb(0, 0, 0);
     /*background*/
     --header-bg-color:rgba(255, 207, 207, 0.89);
     --light-bg-color:white;
@@ -21,6 +22,11 @@
     /*shadow*/
     --header-shadow:0 4px 10px rgb(177, 182, 182);
     --card-shdow:0 3px 10px rgb(66, 68, 68);
+    /* color */
+    --text-blue-color:rgb(6, 6, 155);
+    --text-purple-color:rgb(139, 0, 139);
+    --text-green-color:rgb(0, 100, 0);
+    --text-orange-color:rgb(168, 95, 4);
 }
 
 html{scroll-behavior: smooth;}
@@ -127,3 +133,40 @@ footer{
     text-align: center;
     margin-top: 1.5rem;
 }
+
+/* ============= info =========== */
+.info-section{
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--light-bg-color);
+    box-shadow: var(--card-shdow);
+    border-radius: 0.75rem;
+}
+.info-title{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--dark-text-color);
+}
+.info-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.info-card{
+    background-color: var(--light-bg-color);
+    box-shadow: var(--card-shdow);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    height: 10rem;
+    font-size: 0.875rem;
+    padding: 1rem;
+}
+.info-card:nth-child(1){background-color: rgb(115, 208, 245);}
+.info-card:nth-child(2){background-color: rgb(252, 164, 255);}
+.info-card:nth-child(3){background-color: rgb(155, 241, 155);}
+.info-card:nth-child(4){background-color: rgb(238, 198, 124);}
+
+.blue{color:var(--text-blue-color);}
+.purple{color:var(--text-purple-color);}
+.green{color:var(--text-green-color);}
+.orange{color:var(--text-orange-color);}
